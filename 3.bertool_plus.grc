@@ -407,7 +407,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>16</value>
+      <value>1</value>
     </param>
   </block>
   <block>
@@ -625,14 +625,14 @@
     </param>
   </block>
   <block>
-    <key>b_SERTool_Channel</key>
+    <key>b_BERTool_Channel</key>
     <param>
       <key>B</key>
       <value>samp_rate</value>
     </param>
     <param>
       <key>alias</key>
-      <value>QPSK</value>
+      <value></value>
     </param>
     <param>
       <key>comment</key>
@@ -656,7 +656,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(628, 472)</value>
+      <value>(596, 480)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -668,7 +668,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>b_SERTool_Channel_0</value>
+      <value>b_BERTool_Channel_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -685,6 +685,10 @@
     <param>
       <key>Rs</key>
       <value>Rs</value>
+    </param>
+    <param>
+      <key>tipo_mod</key>
+      <value>"QPSK"</value>
     </param>
   </block>
   <block>
@@ -1430,14 +1434,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>b_SERTool_Channel_0</source_block_id>
+    <source_block_id>b_BERTool_Channel_0</source_block_id>
     <sink_block_id>digital_constellation_decoder_cb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_throttle</source_block_id>
-    <sink_block_id>b_SERTool_Channel_0</sink_block_id>
+    <sink_block_id>b_BERTool_Channel_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>1</sink_key>
   </connection>
@@ -1455,13 +1459,13 @@
   </connection>
   <connection>
     <source_block_id>digital_chunks_to_symbols_xx</source_block_id>
-    <sink_block_id>b_SERTool_Channel_0</sink_block_id>
+    <sink_block_id>b_BERTool_Channel_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>digital_constellation_decoder_cb_0</source_block_id>
-    <sink_block_id>b_SERTool_Channel_0</sink_block_id>
+    <sink_block_id>b_BERTool_Channel_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>2</sink_key>
   </connection>
